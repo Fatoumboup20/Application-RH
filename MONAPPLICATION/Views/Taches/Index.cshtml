@@ -1,0 +1,99 @@
+﻿@model IEnumerable<MONAPPLICATION.Models.Tache>
+
+@{
+    ViewData["Title"] = "Gestion des Tâches";
+}
+
+<div class="container mt-4">
+    <h1 class="page-title">@ViewData["Title"]</h1>
+     @if (User.IsInRole("ResponsableRH")) 
+            {                
+        <p>
+            <a asp-action="Create" class="btn btn-outline-info btn-sm">Ajouter</a>
+        </p>
+            }
+    <table class="table table-hover align-middle text-center">
+        <thead class="table-light">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().Titre)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Description)</th>
+                <th>@Html.DisplayNameFor(model => model.First().DateDebut)</th>
+                <th>@Html.DisplayNameFor(model => model.First().DateFin)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Statut)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Utilisateur.Nom)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Titre</td>
+                    <td>@item.Description</td>
+                    <td>@item.DateDebut.ToShortDateString()</td>
+                    <td>@(item.DateFin != null ? item.DateFin.ToShortDateString() : "N/A")</td>
+                    <td>@item.Statut</td>
+                    <td>@(item.Utilisateur != null ? item.Utilisateur.Nom : "Aucun utilisateur")</td>
+                    <td>
+                        @if (User.IsInRole("Employe")) // Si c'est un employé
+                        {
+                            if (item.Statut == "En attente") // Vérifiez si la tâche est en attente
+                            {
+                                <form asp-action="Terminer" asp-route-id="@item.TacheId" method="post" style="display:inline;">
+                                    <button type="submit" class="btn btn-success btn-sm">Terminer</button>
+                                </form>
+                            }
+                        }
+                        else // Si ce n'est pas un employé
+                        {
+                            <a asp-action="Edit" asp-route-id="@item.TacheId" class="btn btn-outline-warning btn-sm">Modifier</a>
+                            <a asp-action="Details" asp-route-id="@item.TacheId" class="btn btn-outline-info btn-sm">Détails</a>
+                            <a asp-action="Delete" asp-route-id="@item.TacheId" class="btn btn-outline-danger btn-sm">Supprimer</a>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    body {
+        background-color: #f0f0f0; /* Couleur de fond neutre */
+    }
+
+    .table {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        border: 1px solid #dee2e6; /* Bordure autour du tableau */
+    }
+
+        .table th {
+            color: #495057; /* Couleur du texte d'en-tête */
+            font-weight: bold; /* Gras pour les en-têtes */
+        }
+
+        .table tr {
+            transition: background-color 0.3s; /* Transition pour l'effet de survol */
+        }
+
+            .table tr:hover {
+                background-color: #f1f1f1; /* Couleur de fond au survol */
+            }
+
+    .btn {
+        transition: background-color 0.3s ease;
+    }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+    .page-title {
+        font-size: 2.5rem; /* Taille de la police */
+        color: #343a40; /* Couleur du texte */
+        text-align: center; /* Centrer le texte */
+        margin-bottom: 20px; /* Marge en bas du titre */
+        font-weight: bold; /* Gras pour le texte */
+    }
+</style>

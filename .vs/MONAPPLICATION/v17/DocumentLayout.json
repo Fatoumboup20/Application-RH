@@ -1,0 +1,419 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\demandes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\demandes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\controllers\\contratscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\controllers\\contratscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\controllers\\demandescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\controllers\\demandescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\demandes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\demandes\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\taches\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\taches\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\models\\demande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\models\\demande.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\utilisateurs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\utilisateurs\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\utilisateurs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\utilisateurs\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\controllers\\utilisateurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\controllers\\utilisateurscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\models\\contrat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\models\\contrat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\evaluationperformances\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\evaluationperformances\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\contrats\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\contrats\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\models\\evaluationperformance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\models\\evaluationperformance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\taches\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\taches\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\models\\tache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\models\\tache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\controllers\\evaluationperformancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\controllers\\evaluationperformancescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|c:\\users\\hp\\source\\repos\\monapplication\\monapplication\\models\\gestionrhcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E4092F3-A770-45A0-8CC2-D0964F503C46}|MONAPPLICATION\\MONAPPLICATION.csproj|solutionrelative:monapplication\\models\\gestionrhcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DemandesController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\DemandesController.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Controllers\\DemandesController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\DemandesController.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Controllers\\DemandesController.cs",
+              "ViewState": "AgIAAEMAAAAALjMzMzMDwIsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:10:03.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Demande.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\Demande.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Models\\Demande.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\Demande.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Models\\Demande.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T19:02:48.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Taches\\Index.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\Taches\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Taches\\Index.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\Taches\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T20:50:32.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Demandes\\Index.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\Demandes\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Demandes\\Index.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\Demandes\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T19:12:30.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Demandes\\Create.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\Demandes\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Demandes\\Create.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\Demandes\\Create.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T19:47:25.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContratsController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\ContratsController.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Controllers\\ContratsController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\ContratsController.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Controllers\\ContratsController.cs",
+              "ViewState": "AgIAAHQAAACAZWZmZmYewD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T17:11:44.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Utilisateurs\\Create.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\Utilisateurs\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Utilisateurs\\Create.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\Utilisateurs\\Create.cshtml",
+              "ViewState": "AgIAAB4AAACAZmZmZmYkwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T20:19:54.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Utilisateurs\\Index.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\Utilisateurs\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Utilisateurs\\Index.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\Utilisateurs\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T20:18:58.615Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UtilisateursController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\UtilisateursController.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Controllers\\UtilisateursController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\UtilisateursController.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Controllers\\UtilisateursController.cs",
+              "ViewState": "AgIAACgAAAAAy8zMzMwuwCMAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-17T20:33:21.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAqwEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:14:47.096Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Contrats\\Index.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\Contrats\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Contrats\\Index.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\Contrats\\Index.cshtml",
+              "ViewState": "AgIAACAAAAAAMzMzMzMbwCcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T19:50:15.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\EvaluationPerformances\\Index.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\EvaluationPerformances\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\EvaluationPerformances\\Index.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\EvaluationPerformances\\Index.cshtml",
+              "ViewState": "AgIAAC8AAABAMzMzMzMbwE8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T20:17:03.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Contrat.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\Contrat.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Models\\Contrat.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\Contrat.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Models\\Contrat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-14T16:38:31.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EvaluationPerformance.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\EvaluationPerformance.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Models\\EvaluationPerformance.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\EvaluationPerformance.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Models\\EvaluationPerformance.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:34:41.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Taches\\Create.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\Taches\\Create.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Taches\\Create.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\Taches\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T20:55:29.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T18:23:50.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Tache.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\Tache.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Models\\Tache.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\Tache.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Models\\Tache.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T21:18:16.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T18:23:57.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:22:00.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MONAPPLICATION\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-08T18:34:57.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\LoginModel.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Models\\LoginModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:17:40.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "EvaluationPerformancesController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\EvaluationPerformancesController.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Controllers\\EvaluationPerformancesController.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Controllers\\EvaluationPerformancesController.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Controllers\\EvaluationPerformancesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T18:11:56.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\appsettings.json",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\appsettings.json",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\appsettings.json",
+              "RelativeToolTip": "MONAPPLICATION\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-08T17:58:35.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GestionRhContext.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\GestionRhContext.cs",
+              "RelativeDocumentMoniker": "MONAPPLICATION\\Models\\GestionRhContext.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\MONAPPLICATION\\MONAPPLICATION\\Models\\GestionRhContext.cs",
+              "RelativeToolTip": "MONAPPLICATION\\Models\\GestionRhContext.cs",
+              "ViewState": "AgIAAFUAAAAA//////8pwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T17:43:19.711Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

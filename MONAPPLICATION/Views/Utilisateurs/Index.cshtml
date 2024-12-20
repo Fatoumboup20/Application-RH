@@ -1,0 +1,105 @@
+﻿@model IEnumerable<MONAPPLICATION.Models.Utilisateur>
+
+@{
+    // Vérifie le rôle de l'utilisateur connecté
+    var roleConnecte = User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Role)?.Value;
+    var titrePage = roleConnecte == "ResponsableRH" ? "Gestion des Employés" : "Gestion des Utilisateurs";
+}
+
+<div class="container mt-4">
+    <h1 class="page-title">@titrePage</h1>
+
+    
+    
+        <p>
+            <a asp-action="Create" class="btn btn-outline-info btn-sm">Ajouter</a>
+        </p>
+    
+    <table class="table table-hover align-middle text-center">
+        <thead class="table-light">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().Email)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Nom)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Prenom)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Role)</th>
+                @if (roleConnecte != "ResponsableRH")
+                {
+                    <th>@Html.DisplayNameFor(model => model.First().IsActive)</th>
+
+                }
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Email</td>
+                    <td>@item.Nom</td>
+                    <td>@item.Prenom</td>
+                    <td>@item.Role</td>
+                    @if (roleConnecte != "ResponsableRH")
+                    {
+                        <td>@(item.IsActive ? "Actif" : "Inactif")</td>
+
+                    }
+                    <td>
+                        @if (roleConnecte != "ResponsableRH")
+                        {
+                            <form asp-action="@(item.IsActive ? "Deactivate" : "Activate")" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@item.Id" />
+                                <button type="submit" class="btn btn-outline-@(item.IsActive ? "danger" : "success") btn-sm">
+                                    @(item.IsActive ? "Désactiver" : "Activer")
+                                </button>
+                            </form>
+                        }
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-warning btn-sm">Modifier</a>
+                        <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-info btn-sm">Détails</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger btn-sm">Supprimer</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    body {
+        background-color: #f0f0f0; /* Couleur de fond neutre */
+    }
+
+    .table {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        border: 1px solid #dee2e6; /* Bordure autour du tableau */
+    }
+
+        .table th {
+            color: #495057; /* Couleur du texte d'en-tête */
+            font-weight: bold; /* Gras pour les en-têtes */
+        }
+
+        .table tr {
+            transition: background-color 0.3s; /* Transition pour l'effet de survol */
+        }
+
+            .table tr:hover {
+                background-color: #f1f1f1; /* Couleur de fond au survol */
+            }
+
+    .btn {
+        transition: background-color 0.3s ease;
+    }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+    .page-title {
+        font-size: 2.5rem; /* Taille de la police */
+        color: #343a40; /* Couleur du texte */
+        text-align: center; /* Centrer le texte */
+        margin-bottom: 20px; /* Marge en bas du titre */
+        font-weight: bold; /* Gras pour le texte */
+    }
+</style>

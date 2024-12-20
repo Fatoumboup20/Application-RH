@@ -1,0 +1,68 @@
+﻿@model MONAPPLICATION.Models.Utilisateur
+@{
+    ViewData["Title"] = "Create";
+
+    // Récupérer le rôle de l'utilisateur connecté
+    var roleConnecte = User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Role)?.Value;
+}
+
+<h1>Create</h1>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Nom"></label>
+        <input asp-for="Nom" class="form-control" />
+        <span asp-validation-for="Nom" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Prenom"></label>
+        <input asp-for="Prenom" class="form-control" />
+        <span asp-validation-for="Prenom" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateNaissance"></label>
+        <input asp-for="DateNaissance" type="date" class="form-control" />
+        <span asp-validation-for="DateNaissance" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Adresse"></label>
+        <input asp-for="Adresse" class="form-control" />
+        <span asp-validation-for="Adresse" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateEmbauche"></label>
+        <input asp-for="DateEmbauche" type="date" class="form-control" />
+        <span asp-validation-for="DateEmbauche" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Salaire"></label>
+        <input asp-for="Salaire" type="number" step="0.01" class="form-control" />
+        <span asp-validation-for="Salaire" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Role"></label>
+        <select asp-for="Role" class="form-control">
+            @if (roleConnecte == "ResponsableRH")
+            {
+                <option value="Employe">Employé</option>
+            }
+            else
+            {
+                <option value="Employe">Employé</option>
+                <option value="ResponsableRH">Responsable RH</option>
+            }
+        </select>
+        <span asp-validation-for="Role" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

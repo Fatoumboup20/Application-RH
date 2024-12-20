@@ -1,0 +1,99 @@
+﻿@model IEnumerable<MONAPPLICATION.Models.EvaluationPerformance>
+
+@{
+    ViewData["Title"] = "Liste des Évaluations de Performance";
+}
+
+<div class="container mt-4">
+    <h1 class="page-title">@ViewData["Title"]</h1>
+
+    <p>
+        <a asp-action="Create" class="btn btn-outline-info btn-sm"><i class="bi bi-plus-circle"></i> Créer une nouvelle évaluation</a>
+    </p>
+
+    <div class="table-responsive">
+        <table class="table table-hover align-middle text-center custom-table">
+            <thead class="table-light">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.First().DateEvaluation)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Note)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Commentaire)</th>
+                    <th>@Html.DisplayNameFor(model => model.First().Utilisateur.Nom)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.DateEvaluation.ToString("d")</td>
+                        <td>@Html.DisplayFor(modelItem => item.Note)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Commentaire)</td>
+                        <td>@(item.Utilisateur != null ? Html.DisplayFor(modelItem => item.Utilisateur.Nom) : "Aucun utilisateur")</td>
+                        <td>
+                            <div class="d-flex justify-content-center gap-2">
+                                <a asp-action="Edit" asp-route-id="@item.EvaluationId" class="btn btn-outline-warning btn-sm">
+                                    <i class="bi bi-pencil-square"></i> Modifier
+                                </a>
+                                <a asp-action="Details" asp-route-id="@item.EvaluationId" class="btn btn-outline-info btn-sm">
+                                    <i class="bi bi-info-circle"></i> Détails
+                                </a>
+                                <a asp-action="Delete" asp-route-id="@item.EvaluationId" class="btn btn-outline-danger btn-sm">
+                                    <i class="bi bi-trash"></i> Supprimer
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f0f0f0; /* Couleur de fond neutre */
+    }
+
+    .page-title {
+        font-size: 2.5rem; /* Taille de la police */
+        color: #343a40; /* Couleur du texte */
+        text-align: center; /* Centrer le texte */
+        margin-bottom: 20px; /* Marge en bas du titre */
+        font-weight: bold; /* Gras pour le texte */
+    }
+
+    .custom-table {
+        border-radius: 0.5rem;
+        border: 1px solid #dee2e6; /* Bordure autour du tableau */
+        overflow: hidden; /* Pour arrondir les coins */
+        background-color: #ffffff; /* Couleur de fond du tableau */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
+    }
+
+        .custom-table th, .custom-table td {
+            padding: 12px 15px; /* Padding pour les cellules */
+            color: #333; /* Couleur du texte */
+        }
+
+        .custom-table th {
+            background-color: #007bff; /* Couleur de fond d'en-tête */
+            color: white; /* Couleur du texte d'en-tête */
+        }
+
+        .custom-table tr {
+            transition: background-color 0.3s; /* Transition pour l'effet de survol */
+        }
+
+            .custom-table tr:hover {
+                background-color: #f1f1f1; /* Couleur de fond au survol */
+            }
+
+    .btn {
+        transition: background-color 0.3s ease, opacity 0.3s ease; /* Ajout de transition pour l'opacité */
+    }
+
+        .btn:hover {
+            opacity: 0.8; /* Effet d'opacité au survol */
+        }
+</style>

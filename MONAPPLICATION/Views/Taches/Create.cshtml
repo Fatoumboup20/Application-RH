@@ -1,0 +1,82 @@
+﻿@model MONAPPLICATION.Models.Tache
+
+@{
+    ViewData["Title"] = "Créer une Tâche";
+}
+
+<div class="container mt-4">
+    <h1 class="page-title">@ViewData["Title"]</h1>
+
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Titre" class="control-label"></label>
+                    <input asp-for="Titre" class="form-control" />
+                    <span asp-validation-for="Titre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description" class="control-label"></label>
+                    <textarea asp-for="Description" class="form-control"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DateDebut" class="control-label"></label>
+                    <input asp-for="DateDebut" class="form-control" />
+                    <span asp-validation-for="DateDebut" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DateFin" class="control-label"></label>
+                    <input asp-for="DateFin" class="form-control" />
+                    <span asp-validation-for="DateFin" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="UtilisateurId" class="control-label"></label>
+                    <select asp-for="UtilisateurId" class="form-control" asp-items="ViewBag.UtilisateurId"></select>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Créer" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-secondary">Retour à la liste</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+<style>
+    body {
+        background-color: #f0f0f0; /* Couleur de fond neutre */
+    }
+
+    .page-title {
+        font-size: 2.5rem; /* Taille de la police */
+        color: #343a40; /* Couleur du texte */
+        text-align: center; /* Centrer le texte */
+        margin-bottom: 20px; /* Marge en bas du titre */
+        font-weight: bold; /* Gras pour le texte */
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+    }
+</style>

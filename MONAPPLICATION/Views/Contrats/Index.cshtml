@@ -1,0 +1,102 @@
+﻿@model IEnumerable<MONAPPLICATION.Models.Contrat>
+
+@{
+    ViewData["Title"] = "Gestion des Contrats";
+}
+
+<div class="container mt-4">
+    <h1 class="page-title">@ViewData["Title"]</h1>
+
+    @if (User.IsInRole("ResponsableRH")) // Vérifiez si l'utilisateur est un employé
+    {
+        <p>
+            <a asp-action="Create" class="btn btn-outline-info btn-sm">Ajouter un contrat</a>
+        </p>
+    }
+
+    <table class="table table-hover align-middle text-center">
+        <thead class="table-light">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.First().TypeContrat)</th>
+                <th>@Html.DisplayNameFor(model => model.First().DateDebut)</th>
+                <th>@Html.DisplayNameFor(model => model.First().DateFin)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Salaire)</th>
+                <th>@Html.DisplayNameFor(model => model.First().Utilisateur.Nom)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.TypeContrat</td>
+                    <td>@item.DateDebut.ToShortDateString()</td>
+                    <td>@(item.DateFin != null ? item.DateFin.ToShortDateString() : "N/A")</td>
+                    <td>@item.Salaire.ToString("C")</td>
+                    <td>@(item.Utilisateur != null ? item.Utilisateur.Nom : "Aucun employé")</td>
+                    <td>
+                        <div class="d-flex justify-content-center gap-2">
+                            @if (!User.IsInRole("Employe")) // Si ce n'est pas un employé, afficher les boutons Modifier et Supprimer
+                            {
+                                <a asp-action="Edit" asp-route-id="@item.ContratId" class="btn btn-outline-warning btn-sm">Modifier</a>
+                                <a asp-action="Delete" asp-route-id="@item.ContratId" class="btn btn-outline-danger btn-sm">Supprimer</a>
+                            }
+                            <a asp-action="Details" asp-route-id="@item.ContratId" class="btn btn-outline-info btn-sm">Détails</a>
+                            <button class="btn btn-outline-secondary btn-sm" onclick="printContrat(@item.ContratId)">Imprimer</button>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script>
+        function printContrat(contratId) {
+            var printWindow = window.open('/Contrats/Print/' + contratId, '_blank');
+            printWindow.focus();
+        }
+    </script>
+}
+
+<style>
+    body {
+        background-color: #f0f0f0;
+    }
+
+    .table {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        border: 1px solid #dee2e6;
+    }
+
+        .table th {
+            color: #495057;
+            font-weight: bold;
+        }
+
+        .table tr {
+            transition: background-color 0.3s;
+        }
+
+            .table tr:hover {
+                background-color: #f1f1f1;
+            }
+
+    .btn {
+        transition: background-color 0.3s ease;
+    }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+    .page-title {
+        font-size: 2.5rem;
+        color: #343a40;
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+</style>

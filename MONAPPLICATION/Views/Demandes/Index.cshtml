@@ -1,0 +1,126 @@
+﻿@model IEnumerable<MONAPPLICATION.Models.Demande>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Liste des Demandes";
+}
+<div class="container mt-5">
+    <h1 class="page-title">@ViewData["Title"]</h1>
+    @if (User.IsInRole("Employe"))
+    {
+        <div class="text-center mt-4">
+            <p>
+                <a asp-action="Create" class="btn btn-outline-primary">
+                    <i class="bi bi-person-plus"></i> Ajouter une demande
+                </a>
+            </p>
+        </div>
+    }
+
+    <div class="table-responsive">
+        <table class="table table-hover align-middle text-center">
+            <thead class="table-light">
+                <tr>
+                    <th>Type de Demande</th>
+                    <th>Date</th>
+                    <th>Statut</th>
+                    <th>Utilisateur</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var demande in Model)
+                {
+                    <tr>
+                        <td>@demande.TypeDemande</td>
+                        <td>@demande.DateDemande.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <span class="badge @(demande.Statut == "Validée par RH" ? "bg-success" :
+                                               demande.Statut == "Refusée" ? "bg-danger" : "bg-warning text-dark")">
+                                @(demande.Statut ?? "Statut inconnu")
+                            </span>
+                        </td>
+                        <td>
+                            @if (demande.Utilisateur != null)
+                            {
+                                @demande.Utilisateur.Nom
+                            }
+                            else
+                            {
+                                <span>Non attribué</span>
+                            }
+                        </td>
+                        <td>
+                            <div class="d-flex justify-content-center gap-2">
+                                @if (User.IsInRole("ResponsableRH"))
+                                {
+                                    <form method="post" asp-action="ChangeStatut" asp-route-id="@demande.DemandeId" asp-route-statut="Validée par RH">
+                                        <button type="submit" class="btn btn-outline-success btn-sm">Accepter</button>
+                                    </form>
+                                    <form method="post" asp-action="ChangeStatut" asp-route-id="@demande.DemandeId" asp-route-statut="Refusée">
+                                        <button type="submit" class="btn btn-outline-danger btn-sm">Refuser</button>
+                                    </form>
+                                }
+                                else
+                                {
+                                    <a asp-action="Details" asp-route-id="@demande.DemandeId" class="btn btn-outline-info btn-sm">
+                                        <i class="bi bi-info-circle"></i> Détails
+                                    </a>
+                                    <a asp-action="Delete" asp-route-id="@demande.DemandeId" class="btn btn-outline-danger btn-sm">
+                                        <i class="bi bi-trash"></i> Supprimer
+                                    </a>
+                                }
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f0f0f0; /* Couleur de fond neutre */
+    }
+
+    .table {
+        border-radius: 0.5rem;
+        overflow: hidden;
+        border: 1px solid #dee2e6; /* Bordure autour du tableau */
+    }
+
+        .table th {
+            background-color: #e9ecef; /* Couleur d'en-tête douce */
+            color: #495057; /* Couleur du texte des en-têtes */
+            font-weight: bold; /* Gras pour les en-têtes */
+        }
+
+        .table tr {
+            transition: background-color 0.3s; /* Transition pour l'effet de survol */
+        }
+
+            .table tr:hover {
+                background-color: #f1f1f1; /* Couleur de fond au survol */
+            }
+
+    .badge {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        transition: background-color 0.3s ease;
+    }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+    .page-title {
+        font-size: 2.5rem; /* Taille de la police */
+        color: #343a40; /* Couleur du texte */
+        text-align: center; /* Centrer le texte */
+        margin-bottom: 20px; /* Marge en bas du titre */
+        font-weight: bold; /* Gras pour le texte */
+    }
+</style>
